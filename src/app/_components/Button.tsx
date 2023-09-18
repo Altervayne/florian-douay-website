@@ -52,10 +52,10 @@ const textVariants: Variants = {
 
 const linkVariants: Variants = {
     rest: {
-        borderColor: "rgba(29, 1, 40, 0)",
+        borderColor: "rgba(245, 176, 65, 0)",
     },
     hover: {
-        borderColor: "rgba(29, 1, 40, 1)",
+        borderColor: "rgba(245, 176, 65, 1)",
     },
 }
 
@@ -124,6 +124,8 @@ const useStyles = makeStyles()((theme) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+
+            color: "rgba(29, 1, 40, 1)",
         },
         text: {
             alignSelf: "center",

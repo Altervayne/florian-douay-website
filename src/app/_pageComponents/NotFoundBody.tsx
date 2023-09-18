@@ -54,6 +54,11 @@ const letterVariant = {
 const useStyles = makeStyles()((theme) => {
     return {
         root: {
+            position: "fixed",
+            top: "0",
+            right: "0",
+            zIndex: "99999",
+
             height: "100vh",
             width: "100vw",
 
@@ -62,20 +67,20 @@ const useStyles = makeStyles()((theme) => {
 
             alignItems: "center",
             justifyContent: "center",
-
-            backgroundColor: "#F5F5F5",
 		},
         number: {
             fontSize: "10vw",
             marginTop: 0,
             marginBottom: 0,
 
-            color: "#C80404",
+            color: "rgba(245, 176, 65, 1)",
         },
         text: {
+            marginBottom: theme.spacing(2),
+
             fontSize: "1.75vw",
 
-            color: "rgba(25, 25, 25, 1)",
+            color: "rgba(240, 240, 240, 1)",
         },
     }
 })
