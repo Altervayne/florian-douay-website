@@ -6,7 +6,7 @@ import AnimationCanvas from '../_components/AnimationCanvas'
 
 
 
-function getVariants(index: number): Variants {
+function getTextVariants(index: number): Variants {
     return {
         hidden: {
             opacity: 0,
@@ -26,6 +26,23 @@ function getVariants(index: number): Variants {
     }
 }
 
+function getArrowVariants(isLeft: boolean): Variants {
+    const modifier = isLeft ? "5" : "-5"
+
+    return {
+        hidden: {
+            transform: "rotateZ(0deg) translateY(0px)"
+        },
+        visible: {
+            translateY: "5px",
+            transform: `rotateZ(${modifier}deg) translateY(-10px)`,
+            transition: {
+                delay: 2
+            }
+        }
+    }
+}
+
 
 
 const useStyles = makeStyles()((theme) => {
@@ -38,6 +55,8 @@ const useStyles = makeStyles()((theme) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+
+            overflow: "hidden",
         },
         subRoot: {
             display: "flex",
@@ -61,6 +80,19 @@ const useStyles = makeStyles()((theme) => {
         titleImportant: {
             color: "rgba(245, 176, 65, 1)",
         },
+
+
+
+        arrowRoot: {
+            position: "absolute",
+            bottom: "-50%",
+
+            height: "50vh",
+            width: "200vw",
+
+            backgroundColor: "rgba(255, 255, 250, 1)",
+            backdropFilter: 'blur(5px)'
+        },
     }
 })
 
@@ -73,14 +105,16 @@ export default function FirstSection() {
         <>
             <AnimationCanvas />
             <section className={ classes.root }>
+
                 <motion.div
-                            className={ classes.subRoot }
-                            initial="hidden"
-                            animate="visible"
+                    className={ classes.subRoot }
+                    initial="hidden"
+                    animate="visible"
                 >
+
                     <motion.h2
-                                className={ classes.titleRoot }
-                                variants={ getVariants(0) }
+                        className={ classes.titleRoot }
+                        variants={ getTextVariants(0) }
                     >
                         { `Je m'appelle ` }
                         <strong className={ classes.titleImportant }>
@@ -89,15 +123,42 @@ export default function FirstSection() {
                     </motion.h2>
 
                     <motion.h2
-                                className={ classes.titleRoot }
-                                variants={ getVariants(1) }
+                        className={ classes.titleRoot }
+                        variants={ getTextVariants(1) }
                     >
                         { `Je suis dévelopeur ` }
                         <strong className={ classes.titleImportant }>
                             { `Fullstack` }
                         </strong>
                     </motion.h2>
+
                 </motion.div>
+
+                <motion.svg
+                    className={ classes.arrowRoot }
+                    initial="hidden"
+                    animate="visible"
+                    variants={ getArrowVariants(false) }
+                    width="200%"
+                    height="50%"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect width="100%" height="100%" fill="rgba(255, 255, 250, 1)" />
+                </motion.svg>
+
+                <motion.svg
+                    className={ classes.arrowRoot }
+                    initial="hidden"
+                    animate="visible"
+                    variants={ getArrowVariants(true) }
+                    width="200%"
+                    height="50%"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect width="100%" height="100%" fill="rgba(255, 255, 250, 1)" />
+                </motion.svg>
+
+                
             </section>
         </>
     )
