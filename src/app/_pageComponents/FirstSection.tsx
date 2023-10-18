@@ -52,6 +52,11 @@ const useStyles = makeStyles()((theme) => {
         titleRoot: {
             margin: theme.spacing(2),
             fontSize: theme.typography.pxToRem(52),
+            textAlign: "center",
+
+            [theme.breakpoints.down('md')]: {
+				fontSize: theme.typography.pxToRem(32),
+			},
         },
         titleImportant: {
             color: "rgba(245, 176, 65, 1)",

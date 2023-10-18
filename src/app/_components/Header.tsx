@@ -45,6 +45,7 @@ const useStyles = makeStyles()((theme) => {
 		},
 		name: {
 			alignSelf: "center",
+			textAlign: "center",
 			color: "white",
 
 
