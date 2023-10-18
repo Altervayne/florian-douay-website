@@ -7,9 +7,9 @@ import { BsLinkedin, BsGithub, BsEnvelopeAtFill } from "react-icons/bs"
 
 
 
-const textVariants = {
+const headerTextVariants = {
 	rest: {
-		color: "rgba(255, 255, 255, 1)",
+		color: "rgba(255, 255, 250, 1)",
 		transition: { duration: 0.1 }
 	},
 	hover: {
@@ -17,6 +17,18 @@ const textVariants = {
 		transition: { duration: 0.1 }
 	}
 }
+
+const textVariants = {
+	rest: {
+		color: "rgba(51, 49, 56, 1)",
+		transition: { duration: 0.1 }
+	},
+	hover: {
+		color: "rgba(213, 136, 11, 1)",
+		transition: { duration: 0.1 }
+	}
+}
+
 
 const underlineVariants = {
 	rest: {
@@ -45,7 +57,7 @@ const useStyles = makeStyles()((theme) => {
 			fontSize: theme.typography.pxToRem(18),
 
 			backgroundColor: "transparent",
-			color: "white",
+			color: "#FFFFFA",
 			outline: "none",
 			border: "none",
 
@@ -64,20 +76,18 @@ const useStyles = makeStyles()((theme) => {
 			left: 0,
 			bottom: 0,
 
-			height: "2px",
+			height: "1px",
 			width: "100%",
-			backgroundColor: "#F5B041",
+			backgroundColor: "#D5880B",
 		},
 		contactWindow: {
 			position: "fixed",
 			right: theme.spacing(16),
 
 
-			borderRadius: theme.spacing(2),
+			borderRadius: theme.spacing(1),
 			boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.37)",
-            background: "linear-gradient(275deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03))",
-			backgroundColor: "black",
-            backdropFilter: "blur(1px)",
+			backgroundColor: "#FFFFFA",
 
 
 			[theme.breakpoints.down('sm')]: {
@@ -100,7 +110,7 @@ const useStyles = makeStyles()((theme) => {
 			fontWeight: 600,
 
 			backgroundColor: "transparent",
-			color: "white",
+			color: "#333138",
 			outline: "none",
 			border: "none",
 		},
@@ -116,7 +126,7 @@ const useStyles = makeStyles()((theme) => {
 			padding: 0,
 
 			textDecoration: "none",
-			color: "white",
+			color: "#333138",
 		}
 	}
 })
@@ -188,7 +198,7 @@ export default function ContactButton() {
 	return (
 		<>
 			<motion.button className={ classes.root } initial="rest" animate="rest" whileHover="hover" onClick={() => setIsOpen(!isOpen)}>
-				<motion.span className={ classes.text } variants={ textVariants }>{ "Contactez-moi" }</motion.span>
+				<motion.span className={ classes.text } variants={ headerTextVariants }>{ "Contactez-moi" }</motion.span>
 				<motion.span className={ classes.underline } variants={ underlineVariants }></motion.span>
 			</motion.button>
 			<motion.div className={ classes.contactWindow }

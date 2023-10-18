@@ -4,8 +4,8 @@ import './globals.css'
 import Header from './_components/Header'
 import Footer from './_components/Footer'
 import AnimationCanvas from './_components/AnimationCanvas'
+import FirstSection from './_pageComponents/FirstSection'
 /* Page Components Imports */
-import HomeTitle from './_pageComponents/HomeTitle'
 
 
 
@@ -14,8 +14,7 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <AnimationCanvas />
-                <HomeTitle />
+                <FirstSection />
             </main>
             <Footer />
         </>

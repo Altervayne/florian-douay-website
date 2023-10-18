@@ -9,7 +9,7 @@ import Link from "next/link"
 
 const textVariants = {
 	rest: {
-		color: "rgba(255, 255, 255, 1)",
+		color: "rgba(255, 255, 250, 1)",
 		transition: { duration: 0.1 }
 	},
 	hover: {

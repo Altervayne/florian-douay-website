@@ -16,14 +16,15 @@ const useStyles = makeStyles()((theme) => {
 			justifyContent: "space-between",
 			alignItems: "center",
 
-			position: "relative",
+			position: "fixed",
+			top: "0",
 
 			width: "100%",
             zIndex: 4,
 
-			boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.37)",
-            background: "linear-gradient(275deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03))",
-			backgroundColor: "black",
+			/* boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.37)", */
+            /* background: "linear-gradient(275deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03))", */
+			backgroundColor: "transparent",
             backdropFilter: "blur(2px)",
 
 			[theme.breakpoints.down('sm')]: {
@@ -79,12 +80,6 @@ export default function Header() {
 			<h1 className={ classes.name }>Florian DOUAY</h1>
 
 			<nav className={ classes.nav }>
-				{ !isPhoneScreen && <>
-										<NavButton label="Accueil" link="/" />
-										<NavButton label="CV" link="/cv" />
-										<NavButton label="Portfolio" link="/portfolio" />
-									</> }
-
 				<ContactButton />
 			</nav>
 		</header>

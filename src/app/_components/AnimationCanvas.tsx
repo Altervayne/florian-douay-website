@@ -10,7 +10,7 @@ import canvasAnimation from '../_utils/canvasAnimation'
 const useStyles = makeStyles()((theme) => {
 	return {
 		root: {
-			position: "fixed",
+			position: "absolute",
             zIndex: "0",
             top: "0",
             left: "0",
