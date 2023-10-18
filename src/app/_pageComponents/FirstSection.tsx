@@ -3,6 +3,7 @@
 import { makeStyles } from 'tss-react/mui'
 import { motion, Variants } from 'framer-motion'
 import AnimationCanvas from '../_components/AnimationCanvas'
+import { useMediaQuery, useTheme } from '@mui/material'
 
 
 
@@ -26,8 +27,9 @@ function getTextVariants(index: number): Variants {
     }
 }
 
-function getArrowVariants(isLeft: boolean): Variants {
-    const modifier = isLeft ? "5" : "-5"
+function getArrowVariants(isLeft: boolean, isPhone: boolean): Variants {
+    const modifier = isLeft ? 1 : -1
+    const angle = isPhone ? modifier*20 : modifier*10
 
     return {
         hidden: {
@@ -35,7 +37,7 @@ function getArrowVariants(isLeft: boolean): Variants {
         },
         visible: {
             translateY: "5px",
-            transform: `rotateZ(${modifier}deg) translateY(-10px)`,
+            transform: `rotateZ(${angle}deg) translateY(-10px)`,
             transition: {
                 delay: 2
             }
@@ -100,6 +102,11 @@ const useStyles = makeStyles()((theme) => {
 
 export default function FirstSection() {
     const { classes } = useStyles()
+    const theme = useTheme()
+	
+	const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
+
+
 
     return (      
         <>
@@ -138,7 +145,7 @@ export default function FirstSection() {
                     className={ classes.arrowRoot }
                     initial="hidden"
                     animate="visible"
-                    variants={ getArrowVariants(false) }
+                    variants={ getArrowVariants(false, isPhone) }
                     width="200%"
                     height="50%"
                     xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +157,7 @@ export default function FirstSection() {
                     className={ classes.arrowRoot }
                     initial="hidden"
                     animate="visible"
-                    variants={ getArrowVariants(true) }
+                    variants={ getArrowVariants(true, isPhone) }
                     width="200%"
                     height="50%"
                     xmlns="http://www.w3.org/2000/svg"
