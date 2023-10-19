@@ -12,18 +12,18 @@ import ContactButton from "./ContactButton"
 const useStyles = makeStyles()((theme) => {
 	return {
 		root: {
+			position: "absolute",
+			top: "0",
+
 			display: "flex",
 			justifyContent: "space-between",
 			alignItems: "center",
 
-			position: "fixed",
-			top: "0",
+			
 
 			width: "100%",
             zIndex: 4,
 
-			/* boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.37)", */
-            /* background: "linear-gradient(275deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03))", */
 			backgroundColor: "transparent",
             backdropFilter: "blur(2px)",
 

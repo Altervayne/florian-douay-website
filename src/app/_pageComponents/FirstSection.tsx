@@ -133,7 +133,7 @@ export default function FirstSection() {
                         className={ classes.titleRoot }
                         variants={ getTextVariants(1) }
                     >
-                        { `Je suis dévelopeur ` }
+                        { `Je suis développeur ` }
                         <strong className={ classes.titleImportant }>
                             { `Fullstack` }
                         </strong>
