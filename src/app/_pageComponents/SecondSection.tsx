@@ -13,7 +13,8 @@ import { slideIn } from '../_utils/animationVariants'
 
 interface techListEntry {
     link: string,
-    alt: string
+    alt: string,
+    isWide: boolean
 }
 
 
@@ -75,6 +76,15 @@ const useStyles = makeStyles()((theme) => {
             height: "100px",
             margin: theme.spacing(3)
         },
+        techListImageWide: {
+            boxSizing: "border-box",
+
+            objectFit: "cover",
+
+            width: "500px",
+            maxWidth: "80vw",
+            margin: theme.spacing(3)
+        },
     }
 })
 
@@ -109,7 +119,7 @@ export default function SecondSection() {
                     {
                         techList.map((entry, index) => {
                             return (
-                                <img className={ classes.techListImage } key={ index } src={ entry.link } alt={ entry.alt } />
+                                <img className={ entry.isWide ? classes.techListImageWide : classes.techListImage } key={ index } src={ entry.link } alt={ entry.alt } />
                             )
                         })
                     }
