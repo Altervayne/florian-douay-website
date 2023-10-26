@@ -8,6 +8,11 @@ import { makeStyles } from "tss-react/mui"
 const useStyles = makeStyles()((theme) => {
 	return {
 		root: {
+			display: "flex",
+			
+			boxSizing: "border-box",
+
+			
 			[theme.breakpoints.down('sm')]: {
 			},
 			[theme.breakpoints.up('sm')]: {	
