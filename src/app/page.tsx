@@ -6,6 +6,7 @@ import Footer from './_components/Footer'
 import AnimationCanvas from './_components/AnimationCanvas'
 import FirstSection from './_pageComponents/FirstSection'
 import SecondSection from './_pageComponents/SecondSection'
+import ThirdSection from './_pageComponents/ThirdSection'
 /* Page Components Imports */
 
 
@@ -17,6 +18,7 @@ export default function Home() {
             <main>
                 <FirstSection />
                 <SecondSection />
+                <ThirdSection />
             </main>
             <Footer />
         </>
