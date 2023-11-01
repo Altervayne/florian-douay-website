@@ -112,7 +112,6 @@ export default function SecondSection() {
             >
                 <h2 className={ classes.sectionTitle }>
                     <strong className={ classes.sectionTitleImportant }>{ `Technologies` }</strong>
-                    { ` utilisées` }
                 </h2>
 
                 <div className={ classes.techListRoot }>

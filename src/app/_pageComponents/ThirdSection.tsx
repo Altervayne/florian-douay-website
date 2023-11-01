@@ -85,7 +85,6 @@ export default function ThirdSection() {
             >
                 <h2 className={ classes.sectionTitle }>
                     <strong className={ classes.sectionTitleImportant }>{ `Projets` }</strong>
-                    { ` réalisés` }
                 </h2>
 
                 <div className={ classes.projectListRoot }>
