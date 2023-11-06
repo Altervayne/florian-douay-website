@@ -4,10 +4,14 @@
 import { makeStyles } from 'tss-react/mui'
 import { motion, Variants } from 'framer-motion'
 import { useMediaQuery, useTheme } from '@mui/material'
+/* Types & Data Imports */
+import { ProjectCardData } from '../_types/ProjectCardTypes'
+const projectCards: ProjectCardData[] = require("../_data/projects.json")
 /* Variants Imports */
 import { slideIn } from '../_utils/animationVariants'
 /* Components Imports */
 import SectionTitle from '../_components/SectionTitle'
+import ProjectCard from '../_components/ProjectCard'
 
 
 
@@ -37,18 +41,6 @@ const useStyles = makeStyles()((theme) => {
             paddingTop: theme.spacing(4),
 
             color: "#333138",
-        },
-
-
-
-        sectionTitle: {
-            textAlign: "center",
-
-            marginBottom: theme.spacing(6),
-            fontSize: theme.typography.pxToRem(52),
-        },
-        sectionTitleImportant: {
-            color: "rgba(29, 1, 40, 1)",
         },
 
 
@@ -88,7 +80,13 @@ export default function ThirdSection() {
                 <SectionTitle text="Projets" />
 
                 <div className={ classes.projectListRoot }>
-
+                    {
+                        projectCards.map((project, index) => {
+                            return (
+                                <ProjectCard key={ index } { ...project }/>
+                            )
+                        })
+                    }
                 </div>
             </motion.div>
         </section>
