@@ -7,6 +7,8 @@ import { Variants, motion } from "framer-motion"
 /* Var Declarations & Types Imports */
 import { ProjectCardData } from "../_types/ProjectCardTypes"
 const defaultPath = "projects/"
+/* Components Imports */
+import Tag from "./Tag"
 
 
 
@@ -77,11 +79,27 @@ const useStyles = makeStyles()((theme) => {
 			boxSizing: "border-box",
 
 			width: "100%",
-			padding: "10px 10px",
+			padding: "10px",
 			
 			color: "#1D0128",
 			textAlign: "center",
 			fontSize: theme.typography.pxToRem(24),
+		},
+		description: {
+			boxSizing: "border-box",
+
+			width: "100%",
+			padding: "0px 20px",
+		},
+		
+
+
+		tagsRoot: {
+			display: "flex",
+			flexWrap: "wrap",
+
+			padding: "20px",
+			paddingBottom: "10px",
 		}
 	}
 })
@@ -106,7 +124,23 @@ export default function ProjectCard({ img, title, description, tags, link }: Pro
 				/>
 			</motion.div>
 
-			<h3 className={ classes.title }>{ title }</h3>
+			<h3 className={ classes.title }>
+				{ title }
+			</h3>
+
+			<p className={ classes.description }>
+				{ description }
+			</p>
+
+			<div className={ classes.tagsRoot }>
+				{ 
+					tags.map((tag, index) => {
+						return (
+							<Tag key={ index } label={ tag } />
+						)
+					})
+				}
+			</div>
         </motion.article>
 	)
 }
