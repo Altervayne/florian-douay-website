@@ -8,6 +8,8 @@ import { motion, Variants } from 'framer-motion'
 import { useMediaQuery, useTheme } from '@mui/material'
 /* Variants Imports */
 import { slideIn } from '../_utils/animationVariants'
+/* Components Imports */
+import SectionTitle from '../_components/SectionTitle'
 
 
 
@@ -32,6 +34,8 @@ const useStyles = makeStyles()((theme) => {
             overflow: "hidden",
 
             backgroundColor: "rgba(255, 255, 250, 1)",
+
+            paddingBottom: theme.spacing(8),
         },
         subRoot: {
             display: "flex",
@@ -45,18 +49,6 @@ const useStyles = makeStyles()((theme) => {
             paddingTop: theme.spacing(4),
 
             color: "#333138",
-        },
-
-
-
-        sectionTitle: {
-            textAlign: "center",
-
-            marginBottom: theme.spacing(6),
-            fontSize: theme.typography.pxToRem(52),
-        },
-        sectionTitleImportant: {
-            color: "rgba(29, 1, 40, 1)",
         },
 
 
@@ -110,9 +102,7 @@ export default function SecondSection() {
 
                 variants={ slideIn }
             >
-                <h2 className={ classes.sectionTitle }>
-                    <strong className={ classes.sectionTitleImportant }>{ `Technologies` }</strong>
-                </h2>
+                <SectionTitle text="Technologies" />
 
                 <div className={ classes.techListRoot }>
                     {

@@ -6,6 +6,8 @@ import { motion, Variants } from 'framer-motion'
 import { useMediaQuery, useTheme } from '@mui/material'
 /* Variants Imports */
 import { slideIn } from '../_utils/animationVariants'
+/* Components Imports */
+import SectionTitle from '../_components/SectionTitle'
 
 
 
@@ -83,9 +85,7 @@ export default function ThirdSection() {
 
                 variants={ slideIn }
             >
-                <h2 className={ classes.sectionTitle }>
-                    <strong className={ classes.sectionTitleImportant }>{ `Projets` }</strong>
-                </h2>
+                <SectionTitle text="Projets" />
 
                 <div className={ classes.projectListRoot }>
 
