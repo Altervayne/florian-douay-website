@@ -1,0 +1,51 @@
+[
+    {
+        "img": "nirah.png",
+        "title": "Nirah",
+        "description": "Une application fullstack de messagerie web",
+        "tags": [
+            "JavaScript",
+            "React-js",
+            "Node-js",
+            "Express",
+            "MongoDB",
+            "MUI"
+        ],
+        "link": "https://www.nirah.fr/"
+    },
+    {
+        "img": "corridor.png",
+        "title": "Corridor Engine",
+        "description": "Un moteur de jeu d'aventure textuel sans framework",
+        "tags": [
+            "JavaScript",
+            "HTML5",
+            "CSS3"
+        ],
+        "link": "https://altervayne.github.io/corridor-engine/"
+    },
+    {
+        "img": "ad-cam.png",
+        "title": "AD-CAM",
+        "description": "Le site vitrine d'un installateur de systèmes de sécurité",
+        "tags": [
+            "TypeScript",
+            "Next.js",
+            "Vercel",
+            "MUI"
+        ],
+        "link": "https://www.ad-cam.fr/"
+    },
+    {
+        "img": "animation.png",
+        "title": "Animation en JS",
+        "description": "Une animation physique de balles rebondissantes avec variables",
+        "tags": [
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "CodePen"
+        ],
+        "link": "https://codepen.io/Altervayne/pen/PoxqrJP?editors=0010"
+    }
+]

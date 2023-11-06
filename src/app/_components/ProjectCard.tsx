@@ -2,6 +2,8 @@
 /* Libraries Imports */
 import React from "react"
 import { makeStyles } from "tss-react/mui"
+/* Var Declarations */
+const defaultPath = "../../../public/projects/"
 
 
 
@@ -19,7 +21,10 @@ const useStyles = makeStyles()((theme) => {
 			},
 			[theme.breakpoints.up('md')]: {
 			}
-        }
+        },
+		imageRoot: {
+			
+		}
 	}
 })
 
@@ -30,8 +35,10 @@ export default function ProjectCard() {
 
 
 	return (
-		<article>
+		<article className={ classes.root }>
+			<div className={ classes.imageRoot }>
 
+			</div>
         </article>
 	)
 }
