@@ -11,7 +11,8 @@
             "MongoDB",
             "MUI"
         ],
-        "link": "https://www.nirah.fr/"
+        "link": "https://www.nirah.fr/",
+        "color": "#F17941"
     },
     {
         "img": "corridor.png",
@@ -22,7 +23,8 @@
             "HTML5",
             "CSS3"
         ],
-        "link": "https://altervayne.github.io/corridor-engine/"
+        "link": "https://altervayne.github.io/corridor-engine/",
+        "color": "#7CABF1"
     },
     {
         "img": "ad-cam.png",
@@ -34,7 +36,8 @@
             "Vercel",
             "MUI"
         ],
-        "link": "https://www.ad-cam.fr/"
+        "link": "https://www.ad-cam.fr/",
+        "color": "#B52E2E"
     },
     {
         "img": "animation.png",
@@ -46,6 +49,7 @@
             "CSS3",
             "CodePen"
         ],
-        "link": "https://codepen.io/Altervayne/pen/PoxqrJP?editors=0010"
+        "link": "https://codepen.io/Altervayne/pen/PoxqrJP?editors=0010",
+        "color": "#A88AE4"
     }
 ]

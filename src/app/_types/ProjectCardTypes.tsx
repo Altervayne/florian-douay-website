@@ -3,7 +3,8 @@ interface ProjectCardData {
     title: string,
     description: string,
     tags: string[],
-    link: string
+    link: string,
+    color: string,
 }
 
 

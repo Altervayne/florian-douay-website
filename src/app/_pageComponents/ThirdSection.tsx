@@ -28,6 +28,8 @@ const useStyles = makeStyles()((theme) => {
             overflow: "hidden",
 
             backgroundColor: "rgba(255, 255, 250, 1)",
+
+            paddingBottom: theme.spacing(8),
         },
         subRoot: {
             display: "flex",

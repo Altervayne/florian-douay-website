@@ -52,6 +52,7 @@ const useStyles = makeStyles()((theme) => {
 
 
 		imageRoot: {
+			position: "relative",
 			display: "flex",
 			flexDirection: "column",
 			alignItems: "center",
@@ -66,11 +67,40 @@ const useStyles = makeStyles()((theme) => {
 			borderRadius: theme.spacing(1),
 			borderBottomLeftRadius: "0",
 			borderBottomRightRadius: "0",
+
+			backgroundColor: "rgba(45, 45, 45, 1)"
 		},
 		image: {
 			scale: "0.6",
 			rotate: "45deg",
 			objectFit: "cover",
+		},
+		glow: {
+			position: "absolute",
+			right: "-50px",
+			top: "-50px",
+
+			height: "80%",
+			width: "80%",
+
+			rotate: "27deg",
+			filter: "blur(50px)"
+		},
+		link: {
+			position: "absolute",
+			top: "0",
+			left: "0",
+			margin: "0",
+			padding: "0",
+
+			width: "100%",
+			height: "100%",
+
+			cursor: "pointer",
+
+			borderRadius: theme.spacing(1),
+			borderBottomLeftRadius: "0",
+			borderBottomRightRadius: "0",
 		},
 
 
@@ -106,7 +136,7 @@ const useStyles = makeStyles()((theme) => {
 
 
 
-export default function ProjectCard({ img, title, description, tags, link }: ProjectCardData) {
+export default function ProjectCard({ img, title, description, tags, link, color }: ProjectCardData) {
 	const { classes } = useStyles()
 
 
@@ -116,12 +146,16 @@ export default function ProjectCard({ img, title, description, tags, link }: Pro
 						whileHover="hover"
 		>
 			<motion.div className={ classes.imageRoot }>
+				<div className={ classes.glow } style={{ backgroundColor: `${color}` }} />
+
 				<motion.img src={ `${defaultPath}${img}` } alt={ `${title}, ${description}` } className={ classes.image }
 							variants={ getVariants(true) }
 				/>
 				<motion.img src={ `${defaultPath}${img}` } alt={ `${title}, ${description}` } className={ classes.image }
 							variants={ getVariants(false) }
 				/>
+				
+				<a href={ link }className={ classes.link } target="_blank" />
 			</motion.div>
 
 			<h3 className={ classes.title }>
