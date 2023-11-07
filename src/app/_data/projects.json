@@ -49,7 +49,19 @@
             "CSS3",
             "CodePen"
         ],
-        "link": "https://codepen.io/Altervayne/pen/PoxqrJP?editors=0010",
+        "link": "https://codepen.io/Altervayne/pen/PoxqrJP?editors=0010/",
+        "color": "#A88AE4"
+    },
+    {
+        "img": "ohmyfood.png",
+        "title": "Ohmyfood",
+        "description": "Une application de précommande de nourriture dans un restaurant",
+        "tags": [
+            "HTML5",
+            "Sass",
+            "GitHub Pages"
+        ],
+        "link": "https://altervayne.github.io/Openclassrooms-Ohmyfood",
         "color": "#A88AE4"
     }
 ]
