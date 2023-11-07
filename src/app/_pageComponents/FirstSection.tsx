@@ -75,6 +75,8 @@ const useStyles = makeStyles()((theme) => {
             fontSize: theme.typography.pxToRem(52),
             textAlign: "center",
 
+            color: "#FFF",
+
             [theme.breakpoints.down('md')]: {
 				fontSize: theme.typography.pxToRem(32),
 			},
