@@ -43,6 +43,10 @@ const useStyles = makeStyles()((theme) => {
             paddingTop: theme.spacing(4),
 
             color: "#333138",
+
+            [theme.breakpoints.down('sm')]: {
+				maxWidth: "90vw",
+			},
         },
 
 

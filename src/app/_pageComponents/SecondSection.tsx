@@ -35,6 +35,8 @@ const useStyles = makeStyles()((theme) => {
 
             backgroundColor: "rgba(255, 255, 250, 1)",
 
+            marginTop: "-5px",
+            marginBottom: "-5px",
             paddingBottom: theme.spacing(8),
         },
         subRoot: {
@@ -49,6 +51,10 @@ const useStyles = makeStyles()((theme) => {
             paddingTop: theme.spacing(4),
 
             color: "#333138",
+
+            [theme.breakpoints.down('sm')]: {
+				maxWidth: "90vw",
+			},
         },
 
 

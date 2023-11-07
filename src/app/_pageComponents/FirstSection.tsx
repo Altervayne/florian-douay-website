@@ -29,15 +29,15 @@ function getTextVariants(index: number): Variants {
 
 function getArrowVariants(isLeft: boolean, isPhone: boolean): Variants {
     const modifier = isLeft ? 1 : -1
-    const angle = isPhone ? modifier*20 : modifier*10
+    const angle = isPhone ? modifier*20 : modifier*12
+    const translate = isPhone ? "-100px" : "-25px"
 
     return {
         hidden: {
             transform: "rotateZ(0deg) translateY(0px)"
         },
         visible: {
-            translateY: "5px",
-            transform: `rotateZ(${angle}deg) translateY(-10px)`,
+            transform: `rotateZ(${angle}deg) translateY(${translate})`,
             transition: {
                 delay: 2
             }
