@@ -91,7 +91,12 @@ const useStyles = makeStyles()((theme) => {
 
 
 			[theme.breakpoints.down('sm')]: {
-				top: theme.spacing(16),	
+				top: theme.spacing(16),
+				right: "50%",
+				transform: "translateX(50%)",
+
+				width: "270px",
+				maxWidth: "90vw"
 			},
 			[theme.breakpoints.up('sm')]: {
 				top: theme.spacing(14),	
