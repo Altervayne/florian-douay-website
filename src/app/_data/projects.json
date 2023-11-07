@@ -67,7 +67,7 @@
     {
         "img": "booki.png",
         "title": "Booki",
-        "description": "Maquette d'une application de location de logement pour vacanciers",
+        "description": "Maquette d'une application de location pour vacanciers",
         "tags": [
             "HTML5",
             "CSS3",
@@ -75,5 +75,33 @@
         ],
         "link": "https://altervayne.github.io/Openclassrooms-Booki/",
         "color": "#327DFF"
+    },
+    {
+        "img": "kasa.png",
+        "title": "Kasa",
+        "description": "Maquette d'une application de location de logements",
+        "tags": [
+            "JavaScript",
+            "React-js",
+            "CSS3",
+            "Vercel"
+        ],
+        "link": "https://kasa.florian-douay.fr/",
+        "color": "#FF6060"
+    },
+    {
+        "img": "panthere.png",
+        "title": "La Panthère",
+        "description": "Optimisation du référencement naturel d'un site pré-existant",
+        "tags": [
+            "SEO",
+            "HTML5",
+            "CSS3",
+            "Google Lighthouse",
+            "WAVE",
+            "GitHub Pages"
+        ],
+        "link": "https://altervayne.github.io/Openclassrooms-La_panthere/",
+        "color": "#CD4B0E"
     }
 ]
