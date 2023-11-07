@@ -55,7 +55,7 @@
     {
         "img": "ohmyfood.png",
         "title": "Ohmyfood",
-        "description": "Une application de précommande de nourriture dans un restaurant",
+        "description": "Maquette d'une application de précommande de nourriture dans un restaurant",
         "tags": [
             "HTML5",
             "Sass",
@@ -63,5 +63,17 @@
         ],
         "link": "https://altervayne.github.io/Openclassrooms-Ohmyfood",
         "color": "#5DD39E"
+    },
+    {
+        "img": "booki.png",
+        "title": "Booki",
+        "description": "Maquette d'une application de location de logement pour vacanciers",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "GitHub Pages"
+        ],
+        "link": "https://altervayne.github.io/Openclassrooms-Booki/",
+        "color": "#327DFF"
     }
 ]
