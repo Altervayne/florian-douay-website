@@ -51,6 +51,8 @@ const useStyles = makeStyles()((theme) => {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-evenly",
+            alignItems: "flex-start",
+            alignContent: "flex-start",
 
             width: "100%",
         },
