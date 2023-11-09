@@ -29,7 +29,7 @@ function getTextVariants(index: number): Variants {
 
 function getArrowVariants(isLeft: boolean, isPhone: boolean): Variants {
     const modifier = isLeft ? 1 : -1
-    const angle = isPhone ? modifier*20 : modifier*12
+    const angle = isPhone ? modifier*22 : modifier*12
     const translate = isPhone ? "-100px" : "-25px"
 
     return {
