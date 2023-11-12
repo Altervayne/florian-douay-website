@@ -57,10 +57,10 @@
         "title": "Ohmyfood",
         "description": "Maquette d'une application de précommande de nourriture dans un restaurant",
         "tags": [
+            "Formation OpenClassrooms",
             "HTML5",
             "Sass",
-            "GitHub Pages",
-            "Formation OpenClassrooms"
+            "GitHub Pages"
         ],
         "link": "https://altervayne.github.io/Openclassrooms-Ohmyfood",
         "color": "#5DD39E"
@@ -70,10 +70,10 @@
         "title": "Booki",
         "description": "Maquette d'une application de location pour vacanciers",
         "tags": [
+            "Formation OpenClassrooms",
             "HTML5",
             "CSS3",
-            "GitHub Pages",
-            "Formation OpenClassrooms"
+            "GitHub Pages"
         ],
         "link": "https://altervayne.github.io/Openclassrooms-Booki/",
         "color": "#327DFF"
@@ -83,11 +83,11 @@
         "title": "Kasa",
         "description": "Maquette d'une application de location de logements",
         "tags": [
+            "Formation OpenClassrooms",
             "JavaScript",
             "React-js",
             "CSS3",
-            "Vercel",
-            "Formation OpenClassrooms"
+            "Vercel"
         ],
         "link": "https://kasa.florian-douay.fr/",
         "color": "#FF6060"
@@ -97,13 +97,13 @@
         "title": "La Panthère",
         "description": "Optimisation du référencement naturel d'un site pré-existant",
         "tags": [
+            "Formation OpenClassrooms",
             "SEO",
             "HTML5",
             "CSS3",
             "Google Lighthouse",
             "WAVE",
-            "GitHub Pages",
-            "Formation OpenClassrooms"
+            "GitHub Pages"
         ],
         "link": "https://altervayne.github.io/Openclassrooms-La_panthere/",
         "color": "#CD4B0E"
