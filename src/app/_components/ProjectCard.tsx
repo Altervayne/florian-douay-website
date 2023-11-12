@@ -19,7 +19,7 @@ function getVariants(isFirst: boolean): Variants {
 			translateX: `${30*modifier}px`
 		},
 		hover: {
-			translateX: `${-60*modifier}px`
+			translateX: `${-65*modifier}px`
 		}
 	}
 }
