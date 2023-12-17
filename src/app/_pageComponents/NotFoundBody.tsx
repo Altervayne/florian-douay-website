@@ -7,6 +7,7 @@ import { GoToButton } from '../_components/Button'
 
 
 
+/* Animate the 404 Numbers */
 const numberVariants: Variants = {
     hidden: {
         opacity: 0,
