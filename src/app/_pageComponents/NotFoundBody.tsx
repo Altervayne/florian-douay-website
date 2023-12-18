@@ -26,6 +26,7 @@ const numberVariants: Variants = {
     },
 }
 
+/* Defining the text to be animated */
 const notFoundText = "La page que vous cherchez est introuvable"
 
 const sentenceVariant = {
