@@ -41,6 +41,7 @@ const sentenceVariant = {
     }
 }
 
+/* Defining the Framer Motion Variant for a single letter */
 const letterVariant = {
     hidden: {
         opacity: 0,
