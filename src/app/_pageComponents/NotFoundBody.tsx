@@ -54,7 +54,7 @@ const letterVariant = {
 }
 
 
-
+/* Defining the page stylesheet */
 const useStyles = makeStyles()((theme) => {
     return {
         root: {
