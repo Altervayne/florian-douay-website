@@ -6,7 +6,7 @@ import AnimationCanvas from '../_components/AnimationCanvas'
 import { useMediaQuery, useTheme } from '@mui/material'
 
 
-
+/* Framer Motion Variant for the main text animation */
 function getTextVariants(index: number): Variants {
     return {
         hidden: {
