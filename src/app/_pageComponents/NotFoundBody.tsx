@@ -90,7 +90,7 @@ const useStyles = makeStyles()((theme) => {
 })
 
 
-
+/* Defining the component function */
 export default function NotFoundBody() {
     const { classes } = useStyles()
 
