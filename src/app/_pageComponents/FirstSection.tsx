@@ -26,7 +26,7 @@ function getTextVariants(index: number): Variants {
         }
     }
 }
-
+/* Framer Motion Variant for the white arrow-shape animation */
 function getArrowVariants(isLeft: boolean, isPhone: boolean): Variants {
     const modifier = isLeft ? 1 : -1
     const angle = isPhone ? modifier*22 : modifier*12
