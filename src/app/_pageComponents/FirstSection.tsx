@@ -46,7 +46,7 @@ function getArrowVariants(isLeft: boolean, isPhone: boolean): Variants {
 }
 
 
-
+/* Defining component styles */
 const useStyles = makeStyles()((theme) => {
     return {
         root: {
