@@ -106,6 +106,7 @@ export default function FirstSection() {
     const { classes } = useStyles()
     const theme = useTheme()
 	
+    /* Declaring isPhone boolean, checking if screen size passes mobile breakpoint */
 	const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
 
 
