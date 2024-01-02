@@ -101,7 +101,7 @@ const useStyles = makeStyles()((theme) => {
 })
 
 
-
+/* Defining component function */
 export default function FirstSection() {
     const { classes } = useStyles()
     const theme = useTheme()
