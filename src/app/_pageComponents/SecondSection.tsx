@@ -12,7 +12,7 @@ import { slideIn } from '../_utils/animationVariants'
 import SectionTitle from '../_components/SectionTitle'
 
 
-
+/* Declaring type interface for tech list entries */
 interface techListEntry {
     link: string,
     alt: string,
