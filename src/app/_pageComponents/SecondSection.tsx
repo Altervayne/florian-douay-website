@@ -20,7 +20,7 @@ interface techListEntry {
 }
 
 
-
+/* Defining component styles */
 const useStyles = makeStyles()((theme) => {
     return {
         root: {
