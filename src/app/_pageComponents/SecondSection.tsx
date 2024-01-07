@@ -92,6 +92,7 @@ export default function SecondSection() {
     const { classes } = useStyles()
     const theme = useTheme()
 	
+    /* Declaring isPhone boolean, checking if screen size passes mobile breakpoint */
 	const isPhone = useMediaQuery(theme.breakpoints.down('sm'))
 
 
