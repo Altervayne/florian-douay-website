@@ -14,7 +14,7 @@ import SectionTitle from '../_components/SectionTitle'
 import ProjectCard from '../_components/ProjectCard'
 
 
-
+/* Defining component styles */
 const useStyles = makeStyles()((theme) => {
     return {
         root: {
