@@ -64,7 +64,7 @@ const useStyles = makeStyles()((theme) => {
 })
 
 
-
+/* Defining component function */
 export default function ThirdSection() {
     const { classes } = useStyles()
     const theme = useTheme()
